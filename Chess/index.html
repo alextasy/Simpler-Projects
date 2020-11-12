@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="logic.js" defer></script>
+    <script src="pieceRules.js" defer></script>
+</head>
+
+<body>
+    
+    
+    <div id="board">
+
+        <!-- ROW 1 -->
+        
+        <div class="tile white bRook">&#9820;</div> <div class="tile black bKnight">&#9822;</div> 
+        <div class="tile white bBishop">&#9821;</div> <div class="tile black bQueen">&#9819;</div>
+        <div class="tile white bKing">&#9818;</div> <div class="tile black bBishop">&#9821;</div> 
+        <div class="tile white bKnight">&#9822;</div> <div class="tile black bRook">&#9820;</div>
+
+        <!-- ROW 2 -->
+        
+        <div class="tile black bPawn">&#9823;</div> <div class="tile white bPawn">&#9823;</div> <div class="tile black bPawn">&#9823;</div>
+        <div class="tile white bPawn">&#9823;</div> <div class="tile black bPawn">&#9823;</div> <div class="tile white bPawn">&#9823;</div> 
+        <div class="tile black bPawn">&#9823;</div> <div class="tile white bPawn">&#9823;</div>
+
+        <!-- ROW 3 -->
+        
+        <div class="tile white"></div> <div class="tile black"></div> <div class="tile white"></div> <div class="tile black"></div>
+        <div class="tile white"></div> <div class="tile black"></div> <div class="tile white"></div> <div class="tile black"></div>
+
+        <!-- ROW 4 -->
+        
+        <div class="tile black"></div> <div class="tile white"></div> <div class="tile black"></div> <div class="tile white"></div> 
+        <div class="tile black"></div> <div class="tile white"></div> <div class="tile black"></div> <div class="tile white"></div>
+
+        <!-- ROW 5 -->
+        
+        <div class="tile white"></div> <div class="tile black"></div> <div class="tile white"></div> <div class="tile black"></div>
+        <div class="tile white"></div> <div class="tile black"></div> <div class="tile white"></div> <div class="tile black"></div>
+
+        <!-- ROW 6 -->
+        
+        <div class="tile black"></div> <div class="tile white"></div> <div class="tile black"></div> <div class="tile white"></div> 
+        <div class="tile black"></div> <div class="tile white"></div> <div class="tile black"></div> <div class="tile white"></div>
+
+        <!-- ROW 7 -->
+        
+        <div class="tile white wPawn">&#9817;</div> <div class="tile black wPawn">&#9817;</div> <div class="tile white wPawn">&#9817;</div> 
+        <div class="tile black wPawn">&#9817;</div> <div class="tile white wPawn">&#9817;</div> <div class="tile black wPawn">&#9817;</div> 
+        <div class="tile white wPawn">&#9817;</div> <div class="tile black wPawn">&#9817;</div>
+
+        <!-- ROW 8 -->
+        
+        <div class="tile black wRook">&#9814;</div> <div class="tile white wKnight">&#9816;</div> 
+        <div class="tile black wBishop">&#9815;</div> <div class="tile white wQueen">&#9813;</div> 
+        <div class="tile black wKing">&#9812;</div> <div class="tile white wBishop">&#9815;</div> 
+        <div class="tile black wKnight">&#9816;</div> <div class="tile white wRook">&#9814;</div>
+
+    </div>
+
+    <div id="transform">
+
+        <div><strong>Choose class for your pawn:</strong> </div> 
+
+        <div>
+
+        <button onclick='promotePawn("Rook")'>&#9820;</button>
+        <button onclick="promotePawn('Knight')">&#9822;</button>
+        <button onclick="promotePawn('Bishop')">&#9821;</button>
+        <button onclick="promotePawn('Queen')">&#9819;</button>
+        
+        </div>
+
+    </div>
+
+    <div id="gameOverScreen">GAME OVER!
+
+        <div> <a href="index.html">Play Again</a> </div>
+
+    </div>
+
+</body>
+</html>
